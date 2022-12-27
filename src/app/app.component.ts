@@ -26,7 +26,10 @@ export class AppComponent {
     })
   }
 
-
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
   displayedColumns: string[] = ['id', 'employee_name', 'employee_salary', 'employee_age'];
-  // dataSource = new MatTableDataSource ELEMENT_DATA;
+
 }

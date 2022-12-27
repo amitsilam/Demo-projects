@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 
+import {MatInputModule} from '@angular/material/input';
+
+import {FormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -15,6 +19,8 @@ import {MatTableModule} from '@angular/material/table';
     AppRoutingModule,
     HttpClientModule,
     MatTableModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
